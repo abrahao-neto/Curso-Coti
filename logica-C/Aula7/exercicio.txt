@@ -1,0 +1,55 @@
+/*
+  Escreva um programa que leia um vetor de 5 posições.
+  
+  - Entrada (Leitura dos 5 numeros)
+  - Função (com retorno) para calcular a soma dos numeros
+  - Função (com retorno) para calcular a media dos numeros
+  - Função para imprimir a soma e a media
+
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int numeros[5];
+void entrada() {
+	
+	for(int i = 0; i < 5; i++) {
+		printf("informe um numero: ");
+	    scanf("%d", &numeros[i]);
+	}
+}
+
+int calcularSoma() {
+	int soma = 0;
+	for(int i = 0; i < 5; i++) {
+		soma = soma + numeros[i];
+	}
+	
+	return soma;
+}
+
+int calcularMedia() {
+	int soma = calcularSoma();
+    int media = soma / 5;
+	
+	return media;
+}
+
+
+void imprimir() {
+	int resSoma = calcularSoma();
+	int resMedia = calcularMedia();
+	
+	printf("\nA soma e: %d", resSoma);
+	printf("\nA media e: %d", resMedia);
+}
+
+main() {
+	entrada();
+	calcularSoma();
+	calcularMedia();
+	imprimir();
+	
+	system("pause");
+}

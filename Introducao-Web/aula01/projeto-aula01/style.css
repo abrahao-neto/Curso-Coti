@@ -1,0 +1,83 @@
+
+/* seletor{
+    propriedades: valor;
+} */
+
+body {
+    background-color: #162c41;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    width: 340px; /* Define a largura*/
+    height: auto; /* Define a altura*/
+    background-color: #EEEEEE;
+    margin-top: 50px;
+    margin-left: auto;  /* Define imagem ceentralizada para todo tipo de tela margin top e left/right ambos auto*/
+    margin-right: auto; /* Define imagem ceentralizada para todo tipo de tela margin top e left/right ambos auto*/
+
+    padding: 30px; /* padding é um espaçamento interno*/
+    border-radius: 10px;
+    text-align: center;
+}
+
+img { 
+    width: 100px;
+    border-radius: 50%;
+
+    /*borde-width: 5px;
+    border-style: solid;
+    border-color: #225c72; */
+
+    border: solid  5px #225c72;
+}
+
+h1 { 
+   color: #162c41;
+   font-size: 32px;
+   margin-bottom: 0;
+}
+
+h2 { 
+    margin-top: 0;
+    font-size: 20px;
+    color: #2775A6;
+ }
+
+ p {
+    color: #666666;
+ }
+  
+ ul {
+    margin: 0;  /* top right botton left*/
+    margin-bottom: 20px;
+    padding: 0;
+    list-style-type: none; /* retira o marcador da lista*/
+ }
+
+ /*formatando todos os links que estão dentro da lista*/
+ ul a{ 
+    background-color: #225C72;
+    color: #FFFFFF;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    text-decoration: none; /* retirar o sublinhado dos links*/
+    border-radius: 3px;
+   
+ }
+
+ ul a:hover { 
+    background-color: #0f3747;
+ }
+
+ #link-rodape {
+    color: #225C72;
+ }
+
+ #link-rodape:hover {
+    color: #173d4d;
+ }
+ 
